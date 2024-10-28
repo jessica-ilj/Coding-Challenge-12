@@ -64,3 +64,10 @@ canvas.addEventListener('mouseup', () => {
     drawing = false; // Stop drawing
 });
 
+// Add Color Selection and Canvas Clearing
+
+// Clear the canvas button functionality
+const clearButton = document.getElementById('clear-canvas');
+clearButton.addEventListener('click', () => {
+    ctx.clearRect(0, 0, canvas.width, canvas.height); // Clear the canvas
+});
