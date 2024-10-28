@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Drawing Application</title>
+</head>
+<body>
+    <h1>Unleash Your Creativity!</h1>
+    <h3>
+    Scroll down to select shapes and colors.
+    </h3>
+    
+    <canvas id="myCanvas" width="800" height="600" style="border:1px solid #000;"></canvas>
+    
+    <div>
+        <h2>Select Drawing Tool:</h2>
+        <label>
+            <input type="radio" name="shape" value="line" checked> Line
+        </label>
+        <label>
+            <input type="radio" name="shape" value="rectangle"> Rectangle
+        </label>
+        <label>
+            <input type="radio" name="shape" value="circle"> Circle
+        </label>
+    </div>
+
+    <div>
+        <h2>Choose Color:</h2>
+        <input type="color" id="color-input" value="#000000">
+    </div>
+
+    <button id="clear-canvas">Clear Canvas</button>
+
+    <script src="main.js"></script>
+</body>
+</html>
